@@ -24,7 +24,22 @@
 	<script src="/js/modernizr.custom.js" defer></script>
 	<script src="/js/responsiveslides.min.js" defer></script>
 	<script src="/js/scroll.js" defer></script>
-	<script>Shadowbox.init({handleOversize: "resize",modal: true});$(function() {$(".rslides").responsiveSlides({auto: true,speed: 600,timeout: 2500,namespace: "rslides"});});</script>
+	<script>
+		$(document).ready(function(){
+			Shadowbox.init({
+				handleOversize: "resize",
+				modal: true
+			});
+			$(function() {
+				$(".rslides").responsiveSlides({
+					auto: true,
+					speed: 600,
+					timeout: 2500,
+					namespace: "rslides"
+				});
+			});
+		});
+	</script>
 
 </head>
 <body>
