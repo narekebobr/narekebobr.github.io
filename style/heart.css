@@ -1,3 +1,7 @@
+#imgblock img:hover {
+    animation: pulse 1s;
+}
+
 .heart {
 	fill: red;
 	position: relative;
