@@ -338,6 +338,7 @@
         function VKWidget() {
             var scriptFile = document.createElement('script');
             scriptFile.type = 'text/javascript';
+            scriptFile.async = true;
             scriptFile.setAttribute('src', '//vk.com/js/api/openapi.js?146');
 
             var id = document.createElement('div');
@@ -349,8 +350,11 @@
             script.type = 'text/javascript';
             script.text = vkScript;
 
+
             document.querySelector('#nrb-counters').appendChild(scriptFile);
-            document.querySelector('#nrb-counters').appendChild(script);
+            setTimeout(function() {
+                document.querySelector('#nrb-counters').appendChild(script);
+            }, 2000);
         }
         function MapInit() {
             var iframe = document.createElement('iframe');
@@ -391,9 +395,9 @@
             init();
         };
         </script>
+    <link rel="stylesheet" href="/style/normalize.min.css" />
     <link rel="stylesheet" href="/style/style.min.css" />
     <link rel="stylesheet" href="/style/heart.css" />
-    <link rel="stylesheet" href="/style/normalize.min.css" />
     <link rel="stylesheet" href="/shadowbox/shadowbox.css" />
     <script type="text/javascript" src="/js/jquery.min.js"></script>
     <script type="text/javascript" src="/shadowbox/shadowbox.js"></script>
