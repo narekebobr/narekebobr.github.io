@@ -6,7 +6,7 @@
     <meta name="yandex-verification" content="87752e85ab47bb4a" />
     <meta name="google-site-verification" content="Xmer3xqdJYNbt1kfdSx8WJ3OaXP65MPrFoxJw-oPYuI" />
     <link rel="shortcut icon" href="/img/favicon.ico" />
-    <meta name="author" content="mepfunc" />
+    <meta name="author" content="https://github.com/mepfunc" />
     <title>Усадьба "На реке Бобр", Крупки, Гостиница.</title>
     <meta name="keywords" content="усадьба, крупки, гостиница, трасса М1, трасса М-1, отдых, остановка на ночь, агроусадьба, агротуризм" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -14,34 +14,19 @@
     <meta property="og:type" content="article" />
     <meta property="og:image" content="/img/opgh.jpg" />
     <meta property="og:description" content = "Усадьба «На реке Бобр». Тихое место, располагающее к отдыху на природе. Вам никто не помешает. Мы не подселяем постояльцев. Для гостей предоставляется четырёхкомнатный номер. Гостевая зона полностью закрыта от посторонних глаз. Все удобства: а также сауна с мини-бассейном, камин, печь барбекю." />
-    <link rel="stylesheet" href="/style/normalize.min.css" />
-    <link rel="stylesheet" href="/style/style.min.css" />
-    <link rel="stylesheet" href="/style/heart.css" />
-    <link rel="stylesheet" href="/shadowbox/shadowbox.css" />
-    <script type="text/javascript" src="/js/jquery.min.js"></script>
-    <script type="text/javascript" src="/shadowbox/shadowbox.js"></script>
-    <script type="text/javascript" src="/js/modernizr.custom.js"></script>
-    <script type="text/javascript" src="/js/responsiveslides.min.js"></script>
-    <script type="text/javascript" src="/js/scroll.js"></script>
-    <script>
-        $(document).ready(function(){
-            Shadowbox.init({
-                handleOversize: "resize",
-                modal: true
-            });
-            $(function() {
-                $(".rslides").responsiveSlides({
-                    auto: true,
-                    speed: 600,
-                    timeout: 2500,
-                    namespace: "rslides"
-                });
-            });
-        });
-    </script>
+    <style> /* Critical css */
+    :root { font-family: Arial, Helvetica, sans-serif; font-display: fallback; }
+    #logo, #slider, body, html { margin: 0 auto }
+    html { background: #e9eaed; width: 100%; max-width: 950px; min-width: 300px; font-size: .9em; text-align: justify }
+    body { box-shadow: 0 0 15px 0 #111; background: #fff }
+    #logo, #slider { display: block }
+    #content, .rslides img, body { height: auto; width: 100% }
+    .rslides { list-style: none; padding: 0; margin: 0; }
+    .rslides li:not(:first-child) { display: none; }
+    #contacts, #footer { width: 100%; color: #fff }
+    </style>
 </head>
 <body>
-    <a href="#"><svg class="up-arrow" viewBox="0 0 50 50" enable-background="new 0 0 50 50"><path d="M33.3 26.7L25 18.4l-8.3 8.3-1.4-1.4 9.7-9.7 9.7 9.7z"/><path d="M24 17h2v17h-2z"/></svg></a>
     <header>
         <div id="slider">
             <div id="logo"></div>
@@ -309,5 +294,35 @@
             </script>
         </div>
     </footer>
+    <a href="#">
+        <svg class="up-arrow" viewBox="0 0 50 50" enable-background="new 0 0 50 50">
+            <path d="M33.3 26.7L25 18.4l-8.3 8.3-1.4-1.4 9.7-9.7 9.7 9.7z"/><path d="M24 17h2v17h-2z"/>
+        </svg>
+    </a>
+    <link rel="stylesheet" href="/style/style.min.css" />
+    <link rel="stylesheet" href="/style/heart.css" />
+    <link rel="stylesheet" href="/style/normalize.min.css" />
+    <link rel="stylesheet" href="/shadowbox/shadowbox.css" />
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/shadowbox/shadowbox.js"></script>
+    <script type="text/javascript" src="/js/modernizr.custom.js"></script>
+    <script type="text/javascript" src="/js/responsiveslides.min.js"></script>
+    <script type="text/javascript" src="/js/scroll.js"></script>
+    <script>
+        $(document).ready(function(){
+            Shadowbox.init({
+                handleOversize: 'resize',
+                modal: true
+            });
+            $(function() {
+                $('.rslides').responsiveSlides({
+                    auto: true,
+                    speed: 600,
+                    timeout: 2500,
+                    namespace: 'rslides'
+                });
+            });
+        });
+    </script>
 </body>
 </html>

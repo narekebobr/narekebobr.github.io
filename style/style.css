@@ -1,44 +1,9 @@
-#logo,
-#slider,
-body,
-html {
-    margin: 0 auto
-}
-
-#content,
-.rslides img,
-body {
-    height: auto;
-    width: 100%
-}
-
-#logo,
-#slider {
-    display: block
-}
-
-#contacts,
-#footer {
-    width: 100%;
-    color: #fff
-}
-
 #content a:hover,
 #footer a,
 #footer a:hover,
 #topP,
 .linktoyoutube {
     text-decoration: none
-}
-
-html {
-    background: #e9eaed;
-    width: 100%;
-    max-width: 950px;
-    min-width: 300px;
-    font-size: .9em;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: justify
 }
 
 #contacts,
