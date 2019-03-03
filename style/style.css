@@ -1,3 +1,48 @@
+#contact-us {
+    border-top-left-radius: .5rem;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 90;
+    font-size: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background-color: #415e9b;
+}
+#contact-us span {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    height: 3rem;
+}
+#contact-us a {
+    font-size: 0;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.icon_telegram {
+    background-image: url(/tg.svg);
+}
+.icon_vk {
+    background-image: url(/vk.svg);
+}
+.icon_whats-app {
+    background-image: url(/wa.svg);
+}
 #content a:hover,
 #footer a,
 #footer a:hover,
@@ -19,6 +64,10 @@ body {
     background: #fff
 }
 
+#slider picture {
+    display: block;
+    width: 100%;
+}
 #slider {
     width: 100%;
     position: relative;
@@ -84,6 +133,7 @@ body {
 }
 
 .rslides img {
+    width: 100%;
     float: left;
     box-sizing: border-box;
     border: 0
@@ -166,7 +216,7 @@ footer {
 #footer {
     background: #415e9b;
     padding-top: 20px;
-    padding-bottom: 20px
+    padding-bottom: 4rem;
 }
 
 #footer a {

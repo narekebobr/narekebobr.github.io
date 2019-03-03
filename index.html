@@ -15,17 +15,19 @@
     <meta property="og:image" content="/img/opgh.jpg" />
     <meta property="og:description" content = "Усадьба «На реке Бобр». Тихое место, располагающее к отдыху на природе. Вам никто не помешает. Мы не подселяем постояльцев. Для гостей предоставляется четырёхкомнатный номер. Гостевая зона полностью закрыта от посторонних глаз. Все удобства: а также сауна с мини-бассейном, камин, печь барбекю." />
     <style> /* Critical css */
-    :root { font-family: Arial, Helvetica, sans-serif; font-display: fallback; }
-    #logo, #slider, body, html { margin: 0 auto }
-    html { background: #e9eaed; width: 100%; max-width: 950px; min-width: 300px; font-size: .9em; text-align: justify }
-    body { box-shadow: 0 0 15px 0 #111; background: #fff }
-    #logo, #slider { display: block }
-    #content, .rslides img, body { height: auto; width: 100% }
-    .rslides { list-style: none; padding: 0; margin: 0; }
-    .rslides li:not(:first-child) { display: none; }
-    #contacts, #footer { width: 100%; color: #fff }
-    #map { min-height: 350px; color: rgba(0, 0, 0, .25); display: flex; justify-content: center; align-items: center; }
-    #rewbt { border-radius: 13px;min-width: 160px; min-height: 183px; background-color: rgba(204, 204, 204, 0.25); color: rgba(0, 0, 0, .25); display: flex; margin: 0 auto; justify-content: center; align-items: center; }
+    :root{font-family:Arial,Helvetica,sans-serif;font-display:fallback}
+    .placeholder{color:rgba(0,0,0,.25);}
+    .d-flex{display:flex;justify-content:center;align-items:center}
+    #logo,#slider,body,html{margin:0 auto}
+    html{background:#e9eaed;width:100%;max-width:950px;min-width:300px;font-size:.9em;text-align:justify}
+    body{box-shadow:0 0 15px 0 #111;background:#fff}
+    #logo,#slider{display:block}
+    #content,.rslidesimg,body{height:auto;width:100%}
+    .rslides{list-style:none;padding:0;margin:0}
+    .rslides li:not(:first-child){display:none}
+    #contacts,#footer{width:100%;color:#fff}
+    #map{min-height:350px}
+    #rewbt{border-radius:13px;min-width:160px;min-height:183px;margin:0 auto}
     </style>
 </head>
 <body>
@@ -67,6 +69,13 @@
             </strong>
         </div>
     </header>
+    <div id="contact-us">
+        <span>Написать нам:</span>
+        <a class="icon_telegram" href="https://t.me/narekebobr" title="Отправить сообщение в Telegram"></a>
+        <a class="icon_vk" href="https://vk.me/narekebobr" title="Отправить сообщение в VK"></a>
+        <a class="icon_whats-app" href="https://wa.me/375447657861" title="Отправить сообщение в WhatsApp"></a>
+        <!-- <a href="viber://pa?chatURI=<URI>">Отправить сообщение в Viber</a> -->
+    </div>
     <div id="content">
         <h1 id="aboutUS">
             Приезжайте всей семьёй или дружной компанией, вдвоём или в гордом одиночестве.<br />
@@ -179,7 +188,7 @@
             </a>
         </div>
         <p>
-            <strong id="rewww">Отзывы о нашей усадьбе вы можете прочесть нажав на табличку ниже</strong>
+            <strong id="rewww" class="d-flex placeholder">Отзывы о нашей усадьбе вы можете прочесть нажав на табличку ниже</strong>
         </p>
         <div id="rewbt">
             <span>Здесь должны были быть отзывы но что-то пошло не так :(</span>
@@ -230,12 +239,14 @@
             <li>Я получаю аванс и смс сообщаю вам об этом.</li>
             <li>Квитанция о переводе служит документом, о бронировании вами коттеджа.</li>
         </ol>
-        <div id="map"> Здесь должна была быть карта но что-то пошло не так :( </div>
+        <div id="map" class="d-flex placeholder"> Здесь должна была быть карта но что-то пошло не так :( </div>
     </div>
     <footer>
         <div id="footer" class="foter-f">
             Усадьба "На&nbsp;реке&nbsp;бобр" &#169; 2013-<span id="current-year">2018</span>.<br />
             Сделано&nbsp;с&nbsp;<svg class="heart" viewBox="0 0 32 29.6"><path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2 c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/></svg>
+            <br />
+            <br />
             <script>
                 document.getElementById("current-year").textContent = new Date().getFullYear();
             </script>
@@ -263,162 +274,97 @@
             <img src="//top-fwz1.mail.ru/counter?id=2198166;js=na" style="border:0;position:absolute;left:-9999px;" alt="" />
         </div>
     </noscript>
-    <script>
-        "use strict";
-        function YandexMetrikaInformer() {
-            var first = document.createElement('a');
-            first.setAttribute('href', 'https://metrika.yandex.by/stat/?id=41169954&amp;from=informer');
-            first.setAttribute('target', '_blank');
-            first.setAttribute('rel', 'nofollow');
-            var second = document.createElement('img');
-            second.setAttribute('src', 'https://informer.yandex.ru/informer/41169954/3_1_FFFFFFFF_EFEFEFFF_0_pageviews');
-            second.setAttribute('width', '88');
-            second.setAttribute('height', '31');
-            second.setAttribute('alt', 'Яндекс.Метрика');
-            second.setAttribute('title', 'Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)');
-            second.setAttribute('class', 'ym-advanced-informer');
-            second.setAttribute('data-cid', '41169954');
-            second.setAttribute('data-lang', 'ru');
-            first.appendChild(second);
-            document.querySelector('#nrb-counters').appendChild(first);
-        }
-        function YandexMetrikaCounter() {
-            var yaScript = '(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter41169954 = new Ya.Metrika({ id:41169954, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");';
-            var script = document.createElement('script');
-            script.type = 'text/javascript';
-            script.text = yaScript;
-            document.querySelector('#nrb-counters').appendChild(script);
-        }
-        function Openstat() {
-            var span = document.createElement('span');
-            span.setAttribute('id', 'openstat2348924');
-            document.querySelector('#nrb-counters').appendChild(span);
-            var osScript = 'var openstat = { counter: 2348924, image: 5083, color: "458efc", next: openstat };(function(d, t, p) {var j = d.createElement(t); j.async = true; j.type = "text/javascript";j.src = ("https:" == p ? "https:" : "http:") + "//openstat.net/cnt.js";var s = d.getElementsByTagName(t)[0]; s.parentNode.insertBefore(j, s);})(document, "script", document.location.protocol);';
-            var script = document.createElement('script');
-            script.type = 'text/javascript';
-            script.text = osScript;
-            document.querySelector('#nrb-counters').appendChild(script);
-        }
-        function RatingMailRuLogo() {
-            var first = document.createElement('a');
-            first.setAttribute('href', 'https://top.mail.ru/jump?from=2198166');
-            var second = document.createElement('img');
-            second.setAttribute('src', '//top-fwz1.mail.ru/counter?id=2198166;t=487;l=1');
-            second.setAttribute('width', '88');
-            second.setAttribute('height', '31');
-            second.setAttribute('alt', 'Рейтинг@Mail.ru');
-            first.appendChild(second);
-            document.querySelector('#nrb-counters').appendChild(first);
-        }
-        function RatingMailRuCounter() {
-            var maScript = 'var _tmr=window._tmr||(window._tmr=[]);_tmr.push({id:"2198166",type:"pageView",start:(new Date()).getTime()});(function(d,w,id){if(d.getElementById(id))return;var ts=d.createElement("script");ts.type="text/javascript";ts.async=true;ts.id=id;ts.src=(d.location.protocol=="https:"?"https:":"http:")+"//top-fwz1.mail.ru/js/code.js";var f=function(){var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(ts,s);};if(w.opera=="[object Opera]"){d.addEventListener("DOMContentLoaded",f,false);}else{f();}})(document, window, "topmailru-code");';
-            var script = document.createElement('script');
-            script.type = 'text/javascript';
-            script.text = maScript;
-            document.querySelector('#nrb-counters').appendChild(script);
-        }
-        function TutBy() {
-            var first = document.createElement('a');
-            first.setAttribute('href', '//catalog.tut.by/');
-            var second = document.createElement('img');
-            second.setAttribute('src', '//catalog.tut.by/images/catalog-tut.gif');
-            second.setAttribute('width', '88');
-            second.setAttribute('height', '31');
-            second.setAttribute('alt', 'Каталог TUT.BY');
-            first.appendChild(second);
-            document.querySelector('#nrb-counters').appendChild(first);
-        }
-        function GoogleUA() {
-            var GoogleUA = "(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-53949817-1', 'auto');ga('send', 'pageview');";
-            var script = document.createElement('script');
-            script.type = 'text/javascript';
-            script.text = GoogleUA;
-            document.querySelector('#nrb-counters').appendChild(script);
-        }
-        function VKWidget() {
-            var scriptFile = document.createElement('script');
-            scriptFile.type = 'text/javascript';
-            scriptFile.async = true;
-            scriptFile.setAttribute('src', '//vk.com/js/api/openapi.js?146');
-
-            var id = document.createElement('div');
-            id.setAttribute('id', 'vk_community_messages');
-            document.querySelector('#nrb-counters').appendChild(id);
-
-            var vkScript = 'if(!window.location.host.match(/(localhost|127\.0\.0\.1)/)){VK.Widgets.CommunityMessages("vk_community_messages",146515074,{expandTimeout:"15000",tooltipButtonText:"Есть вопрос?"});}';
-            var script = document.createElement('script');
-            script.type = 'text/javascript';
-            script.text = vkScript;
-
-
-            document.querySelector('#nrb-counters').appendChild(scriptFile);
-            setTimeout(function() {
-                document.querySelector('#nrb-counters').appendChild(script);
-            }, 2000);
-        }
-        function MapInit() {
-            var iframe = document.createElement('iframe');
-            iframe.src = 'https://yandex.ru/map-widget/v1/?um=constructor%3AWvo4lXmCsN9Y9MBKu2bA5yOmve97Ciuj&amp;source=constructor';
-            iframe.width = '100%';
-            iframe.height = '100%';
-            iframe.frameBorder = 0;
-            document.querySelector('#map').innerHTML = '';
-            document.querySelector('#map').appendChild(iframe);
-        }
-        function Booking() {
-            var node = document.getElementById('rewbt');
-            node.innerHTML = '';
-            var randomId = Math.floor(Math.random() * 100000);
-            var targetElemId = 'bcom_rwidget_' + randomId;
-            var div = document.createElement('div');
-            div.setAttribute('id', targetElemId);
-            node.appendChild(div);
-            var script = document.createElement('script');
-            script.type = 'text/javascript';
-            script.async = true;
-            script.src = '//www.booking.com/review_widget/by/usadba-na-reke-bobr.ru.html?tmpl=review_widget/review_widget&wid=' + targetElemId + '&wtype=box_big&hotel_id=886374&widget_language=ru';
-            node.appendChild(script);
-        }
-        function init() {
-            YandexMetrikaInformer();
-            YandexMetrikaCounter();
-            Openstat();
-            RatingMailRuLogo();
-            RatingMailRuCounter();
-            TutBy();
-            GoogleUA();
-            VKWidget();
-        }
-        window.onload = function () {
-            Booking();
-            MapInit();
-            init();
-        };
-        </script>
-    <link rel="stylesheet" href="/style/normalize.min.css" />
-    <link rel="stylesheet" href="/style/style.min.css" />
-    <link rel="stylesheet" href="/style/heart.css" />
-    <link rel="stylesheet" href="/shadowbox/shadowbox.css" />
-    <script type="text/javascript" src="/js/jquery.min.js"></script>
-    <script type="text/javascript" src="/shadowbox/shadowbox.js"></script>
-    <script type="text/javascript" src="/js/modernizr.custom.js"></script>
-    <script type="text/javascript" src="/js/responsiveslides.min.js"></script>
-    <script type="text/javascript" src="/js/scroll.js"></script>
-    <script>
-        $(document).ready(function(){
-            Shadowbox.init({
-                handleOversize: 'resize',
-                modal: true
-            });
-            $(function() {
-                $('.rslides').responsiveSlides({
-                    auto: true,
-                    speed: 600,
-                    timeout: 2500,
-                    namespace: 'rslides'
-                });
+</body>
+<script>
+    "use strict";
+    function YandexMetrikaInformer() {
+        var first = document.createElement('a');
+        first.setAttribute('href', 'https://metrika.yandex.by/stat/?id=41169954&amp;from=informer');
+        first.setAttribute('target', '_blank');
+        first.setAttribute('rel', 'nofollow');
+        var second = document.createElement('img');
+        second.setAttribute('src', 'https://informer.yandex.ru/informer/41169954/3_1_FFFFFFFF_EFEFEFFF_0_pageviews');
+        second.setAttribute('width', '88');
+        second.setAttribute('height', '31');
+        second.setAttribute('alt', 'Яндекс.Метрика');
+        second.setAttribute('title', 'Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)');
+        second.setAttribute('class', 'ym-advanced-informer');
+        second.setAttribute('data-cid', '41169954');
+        second.setAttribute('data-lang', 'ru');
+        first.appendChild(second);
+        document.querySelector('#nrb-counters').appendChild(first);
+    }
+    function YandexMetrikaCounter() {
+        var yaScript = '(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter41169954 = new Ya.Metrika({ id:41169954, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");';
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.text = yaScript;
+        document.querySelector('#nrb-counters').appendChild(script);
+    }
+    function GoogleUA() {
+        var GoogleUA = "(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-53949817-1', 'auto');ga('send', 'pageview');";
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.text = GoogleUA;
+        document.querySelector('#nrb-counters').appendChild(script);
+    }
+    function MapInit() {
+        var iframe = document.createElement('iframe');
+        iframe.src = 'https://yandex.ru/map-widget/v1/?um=constructor%3AWvo4lXmCsN9Y9MBKu2bA5yOmve97Ciuj&amp;source=constructor';
+        iframe.width = '100%';
+        iframe.height = '100%';
+        iframe.frameBorder = 0;
+        document.querySelector('#map').innerHTML = '';
+        document.querySelector('#map').appendChild(iframe);
+    }
+    function Booking() {
+        var node = document.getElementById('rewbt');
+        node.innerHTML = '';
+        var randomId = Math.floor(Math.random() * 100000);
+        var targetElemId = 'bcom_rwidget_' + randomId;
+        var div = document.createElement('div');
+        div.setAttribute('id', targetElemId);
+        node.appendChild(div);
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.async = true;
+        script.src = '//www.booking.com/review_widget/by/usadba-na-reke-bobr.ru.html?tmpl=review_widget/review_widget&wid=' + targetElemId + '&wtype=box_big&hotel_id=886374&widget_language=ru';
+        node.appendChild(script);
+    }
+    function init() {
+        YandexMetrikaInformer();
+        YandexMetrikaCounter();
+        GoogleUA();
+    }
+    window.onload = function () {
+        Booking();
+        MapInit();
+        init();
+    };
+</script>
+<link rel="stylesheet" href="/normalize.min.css" />
+<link rel="stylesheet" href="/style.min.css" />
+<link rel="stylesheet" href="/heart.min.css" />
+<!-- plugins -->
+<link rel="stylesheet" href="/shadowbox/shadowbox.css" />
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript" src="/shadowbox/shadowbox.js"></script>
+<script type="text/javascript" src="/js/modernizr.custom.js"></script>
+<script type="text/javascript" src="/js/responsiveslides.min.js"></script>
+<script>
+    $(document).ready(function(){
+        Shadowbox.init({
+            handleOversize: 'resize',
+            modal: true
+        });
+        $(function() {
+            $('.rslides').responsiveSlides({
+                auto: true,
+                speed: 600,
+                timeout: 2500,
+                namespace: 'rslides'
             });
         });
-    </script>
-</body>
+    });
+</script>
 </html>
