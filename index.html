@@ -104,13 +104,51 @@
                 </li>
             </ul>
         </div>
+        <style type="text/css">
+            div#contacts {
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: -o-flex;
+                display: flex;
+                flex-direction: -ms-row;
+                flex-direction: row;
+                -webkit-flex-wrap: wrap;
+                -moz-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+                -o-flex-wrap: wrap;
+                flex-wrap: wrap;
+                -ms-align-items: center;
+                align-items: center;
+                justify-content: center;
+            }
+            #contacts a {
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: #415e9b;
+
+                box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.43);
+                border-radius: 5px;
+                margin: 10px;
+                transition: all .25s ease;
+                font-size: 18px;
+                text-decoration: none;
+            }
+            #contacts a:hover {
+                box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            }
+        </style>
         <div id="contacts">
-            <strong class="cl-effect-16">
+            <a href="https://narekebobr.by/apartments" data-hover="Апартаменты &quot;Студия&quot;">Апартаменты "Студия"</a>
+            <a href="tel:+375256277120" data-hover="+375(25)627-71-20">+375(25)627-71-20</a><br />
+            <a href="tel:+375447657861" data-hover="+375(44)765-78-61">+375(44)765-78-61</a><br />
+            <a href="mailto:belare@list.ru" data-hover="belare@list.ru">belare@list.ru</a><br />
+            <!-- <strong class="cl-effect-16">
                 <a href="tel:+375256277120" data-hover="+375(25)627-71-20">+375(25)627-71-20</a><br />
                 <a href="tel:+375447657861" data-hover="+375(44)765-78-61">+375(44)765-78-61</a><br />
                 <a href="mailto:belare@list.ru" data-hover="belare@list.ru">belare@list.ru</a><br />
                 <a href="https://narekebobr.by/apartments" data-hover="Апартаменты &quot;Студия&quot;">Апартаменты "Студия"</a>
-            </strong>
+            </strong> -->
         </div>
     </header>
     <div id="contact-us">
